@@ -9,7 +9,7 @@ function Layout() {
                 {/* Logo */}
                 <div className="flex items-center space-x-4 logo">
                     <img
-                        src="/src/img/bird1.png"
+                        src="./src/img/bird1.png"
                         alt="Tetris logo"
                         className="w-12 h-12"
                     />
