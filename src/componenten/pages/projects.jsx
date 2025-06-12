@@ -3,7 +3,13 @@ import {Link} from "react-router";
 
 function Projects() {
     return (
-        <>mijn projecten</>
+        <>
+
+        projecten
+
+
+
+        </>
     )
 }
 

@@ -25,15 +25,19 @@
     --offblack: #0f0f0f;
 
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--offblack);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+
+
+
 }
 
-.accent1{
+.accent1 {
     color: var(--accent1);
 }
 
@@ -52,6 +56,9 @@ a:hover {
 }
 
 body {
+
+
+
     margin: 0;
     display: flex;
     place-items: center;
@@ -66,9 +73,37 @@ h1 {
 
 header {
     color: var(--black);
+    z-index: 1; /* place content above background layer */
+    overflow: hidden; /* prevent bleed */
+
+}
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(https://static.vecteezy.com/system/resources/thumbnails/057/684/138/small/bitmap-pattern-with-pixelated-texture-dotted-gradient-retro-gradation-of-computer-game-bg-abstract-geometric-halftone-effect-digital-speckle-dither-wallpaper-vector.jpg);
+    background-repeat: repeat-x;
+    /*filter: contrast(80%) blur(2px);*/
+    z-index: -1; /* place it behind the content */
 }
 
-header svg{
+
+header nav {
+    color: var(--black);
+
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link p {
+    font-weight: normal;
+}
+
+header svg {
     width: 48px;
     height: 48px;
 }
@@ -92,6 +127,13 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
+}
+
+main {
+
+
+
+
 }
 
 /*@media (prefers-color-scheme: light) {*/
