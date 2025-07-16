@@ -11,11 +11,14 @@ function Home() {
                 <h1 className='play'>Yiming Li</h1>
                 <h2>PORTFOLIO 2023</h2>
                 <h2>Developer</h2>
-                <img src={'src/assets/me.jpg'} alt={"photo of yiming li"}/>
+                <img src={'src/img/me.jpg'} alt={"photo of yiming li"}/>
                 <br/>
                 <br/>
                 <br/>
+                <img className={'bg'} src={'src/img/bg1.png'} alt={"background pattern"}/>
+
             </section>
+
 
             <section>
                 Links
