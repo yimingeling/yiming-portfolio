@@ -10,7 +10,7 @@ function Home() {
                 <Link to={'/'}  className="logoHome">
                     <img
                         src="./src/img/bird1.png"
-                        alt="Tetris logo"
+                        alt="Logo"
 
                     />
                 </Link>
