@@ -11,7 +11,7 @@ function Projects() {
                     {/* Logo */}
                     <Link to={'/'}  className="logo">
                         <img
-                            src="./src/img/bird1.png"
+                            src="./public/img/bird1.png"
                             alt="Tetris logo"
                             className="w-12 h-12"
                         />
