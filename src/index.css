@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +7,7 @@
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 :root {
@@ -20,19 +19,17 @@
     /*color-scheme: light dark;*/
     --accent1: #ed7b68;
     --white: #fefefe;
-    --black: #050505;
+    --black: #000000;
     --offwhite: #efefef;
     --offblack: #0f0f0f;
 
     color: var(--white);
-    background-color: var(--offblack);
+    background-color: var(--black);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
 
 
 }
@@ -41,14 +38,15 @@
     color: var(--accent1);
 }
 
-.play {
-    font-family: "Playfair Display", serif;
 
+
+p {
+    font-size: 1rem;
 }
 
 
 a {
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: inherit;
 }
 
@@ -58,7 +56,6 @@ a:hover {
 body {
 
 
-
     margin: 0;
     display: flex;
     place-items: center;
@@ -66,8 +63,13 @@ body {
     min-height: 100vh;
 }
 
+
 h1 {
-    font-size: 3.2em;
+    font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
+
+
+    text-align: center;
+    font-size: 2.2em;
     line-height: 1.1;
 }
 
@@ -75,8 +77,11 @@ header {
     color: var(--black);
     z-index: 1; /* place content above background layer */
     overflow: hidden; /* prevent bleed */
+    display: flex;
+
 
 }
+
 header::before {
     content: "";
     position: absolute;
@@ -88,52 +93,84 @@ header::before {
 }
 
 
-header nav {
-    color: var(--black);
 
+.logo:hover {
+    transform: rotate(1080deg);
+    transition: 1s;
 }
 
-.link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logoHome{
+    align-self: center;
 }
 
-.link p {
-    font-weight: normal;
+.logoHome img:hover {
+    transform: rotate(1080deg);
+    transition: 1s;
 }
 
-header svg {
-    width: 48px;
-    height: 48px;
+.logoHome img{
+    align-self: center;
+    height: 100px;
+    margin-bottom: 50px;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
+
+
+.navigation a {
+    background-color: var(--offblack);
+    border: 1px solid  var(--offwhite);
+    color: var(--offwhite);
+    font-size: inherit;
+    border-radius: .25em;
+    padding: .2em .6em;
     cursor: pointer;
-    transition: border-color 0.25s;
+    font-family: inherit;
+    box-shadow: 0 .1em .2em #000;
+    text-decoration: none;
+    transition: background-color .2s;
 }
 
-button:hover {
-    border-color: #646cff;
+.navigation a:hover {
+    background-color: #646cff;
 }
 
-button:focus,
-button:focus-visible {
+.navigation a:focus,
+.navigation a:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
 main {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+}
 
+#imgMe {
+    align-self: center;
+    max-width: 50%;
+    margin-bottom: 40px;
+}
 
+.links {
+    align-self: center;
+    display: flex;
+    gap: 15px;
+}
 
+.links a svg  {
+    flex: 1;
+    width: 25px;
+    height: 25px;
+}
 
+.svg {
+    flex: 1;
+}
+
+.links a:hover  {
+background-color: #1a1a1a;
 }
 
 /*@media (prefers-color-scheme: light) {*/

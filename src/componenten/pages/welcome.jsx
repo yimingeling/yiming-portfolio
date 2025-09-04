@@ -19,7 +19,7 @@ function Welcome() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
         >
-            <h1>Welcome to My App</h1>
+            <h1>yimingdoesdev</h1>
             {/* other content */}
         </motion.div>
     );

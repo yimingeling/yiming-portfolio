@@ -3,7 +3,15 @@ import {Link} from "react-router";
 
 function Contact() {
     return (
-        <>Contact</>
+        <>
+            <h1>
+                Contact
+            </h1>
+            <img id={'imgMe'}  src={'src/assets/me2.jpg'} alt={"photo of yiming li"}/>
+
+
+        </>
+
     )
 }
 
