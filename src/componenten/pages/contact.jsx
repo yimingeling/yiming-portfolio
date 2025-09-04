@@ -7,7 +7,7 @@ function Contact() {
             <h1>
                 Contact
             </h1>
-            <img id={'imgMe'}  src={'public/assets/me2.jpg'} alt={"photo of yiming li"}/>
+            <img id={'imgMe'}  src={'assets/me2.jpg'} alt={"photo of yiming li"}/>
 
 
         </>
