@@ -131,7 +131,7 @@ header::before {
 }
 
 .navigation a:hover {
-    background-color: #646cff;
+    background-color: var(--accent1);
 }
 
 .navigation a:focus,
@@ -159,19 +159,28 @@ main {
     gap: 15px;
 }
 
+.first:hover svg path {
+    fill: var(--offwhite);
+    background-color: var(--black);
+}
+
+.second:hover svg path {
+    fill: var(--offwhite);
+    stroke: var(--offwhite);
+    background-color: var(--black);
+}
+
 .links a svg  {
     flex: 1;
     width: 25px;
     height: 25px;
+
 }
 
-.svg {
-    flex: 1;
+.links a svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
-.links a:hover  {
-background-color: #1a1a1a;
-}
 
 /*@media (prefers-color-scheme: light) {*/
 /*    :root {*/
