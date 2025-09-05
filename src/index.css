@@ -30,6 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    padding: 2rem;
 
 }
 
@@ -79,7 +80,6 @@ h1 {
     font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
 
 
-    text-align: center;
     font-size: 2.2em;
     line-height: 1.1;
 }
@@ -115,11 +115,18 @@ header {
     display: flex;
     flex-direction: column;
     align-content: center;
-    gap: 50vh;
-    padding-top: 40vh;
+    gap: 60vh;
+    padding: 40vh 0 50vh;
 }
 
-.projectsMain article {
+.projectsMain article a {
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+.projectsMain article h1{
+    padding-bottom: 30px;
 }
 
 .logo:hover {
@@ -172,6 +179,10 @@ header {
     flex-direction: column;
     align-content: center;
     gap: 20px;
+}
+
+.homeMain h1{
+    text-align: center;
 }
 
 #imgMe {
