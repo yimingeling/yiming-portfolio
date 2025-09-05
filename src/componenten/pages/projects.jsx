@@ -2,26 +2,140 @@ import {Link} from "react-router";
 
 
 function Projects() {
+
     return (
         <>
-            {/* Navbar */}
-            <header className="fixed top-0 left-0 w-full  ">
+            <div className={'projectContainer'}>
+                {/* Navbar */}
+                <header className="">
+                    <a className={'links '}>
+                        <Link to={'/home'}>
+                            ← back
+                        </Link>
+                    </a>
+                    <div className="">
+                        {/* Logo */}
+                        <Link to={'/'} className="logo">
+                            <img
+                                src="img/bird1.png"
+                                alt="Tetris logo"
+                                className="w-12 h-12"
+                            />
+                        </Link>
 
-                <div className="max-w-6xl mx-auto flex items-center justify-between py-2">
-                    {/* Logo */}
-                    <Link to={'/'}  className="logo">
-                        <img
-                            src="img/bird1.png"
-                            alt="Tetris logo"
-                            className="w-12 h-12"
-                        />
-                    </Link>
 
+                    </div>
+                </header>
 
-                </div>
-            </header>
-Projects
+                <main className={'projectsMain'}>
 
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                    <br/>
+                    Projects
+                </main>
+            </div>
         </>
     )
 }

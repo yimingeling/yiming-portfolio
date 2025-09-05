@@ -1,13 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+
+
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background: url('assets/dither2.svg') repeat fixed center;
+    background-size: cover;
+
+
+
+
+}
+
 
 #root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     /*text-align: center;*/
+
 }
 
 :root {
@@ -23,6 +44,7 @@
     --offwhite: #efefef;
     --offblack: #0f0f0f;
 
+
     color: var(--white);
     background-color: var(--black);
 
@@ -31,13 +53,23 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+
+
+
+
+
+
+
 
 }
 
 .accent1 {
     color: var(--accent1);
 }
-
 
 
 p {
@@ -50,18 +82,6 @@ a {
     text-decoration: inherit;
 }
 
-a:hover {
-}
-
-body {
-
-
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
-}
 
 
 h1 {
@@ -73,25 +93,31 @@ h1 {
     line-height: 1.1;
 }
 
-header {
-    color: var(--black);
-    z-index: 1; /* place content above background layer */
-    overflow: hidden; /* prevent bleed */
+.projectContainer{
     display: flex;
+    flex-direction: column;
 
-
+    align-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: url(https://static.vecteezy.com/system/resources/thumbnails/057/684/138/small/bitmap-pattern-with-pixelated-texture-dotted-gradient-retro-gradation-of-computer-game-bg-abstract-geometric-halftone-effect-digital-speckle-dither-wallpaper-vector.jpg);
-    background-repeat: repeat-x;
-    /*filter: contrast(80%) blur(2px);*/
-    z-index: -1; /* place it behind the content */
-}
 
+header {
+    /*background-color: var(--offblack);*/
+    overflow: hidden; /* prevent bleed */
+    align-self: center;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+    padding: 20px;
+    position: fixed;
+
+    gap: 10px;
+
+}
 
 
 .logo:hover {
@@ -99,7 +125,7 @@ header::before {
     transition: 1s;
 }
 
-.logoHome{
+.logoHome {
     align-self: center;
 }
 
@@ -108,17 +134,16 @@ header::before {
     transition: 1s;
 }
 
-.logoHome img{
+.logoHome img {
     align-self: center;
     height: 100px;
     margin-bottom: 50px;
 }
 
 
-
 .navigation a {
     background-color: var(--offblack);
-    border: 1px solid  var(--offwhite);
+    border: 1px solid #757575FF;
     color: var(--offwhite);
     font-size: inherit;
     border-radius: .25em;
@@ -153,6 +178,8 @@ main {
     margin-bottom: 40px;
 }
 
+
+
 .links {
     align-self: center;
     display: flex;
@@ -170,10 +197,10 @@ main {
     background-color: var(--black);
 }
 
-.links a svg  {
+.links a svg {
     flex: 1;
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
 
 }
 
