@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             {/*<h1>This site is under construction</h1>*/}
-            <main>
+            <main className={'homeMain'}>
 
                 <Link to={'/'}  className="logoHome">
                     <img

@@ -8,9 +8,10 @@
 
 body {
 
-
     margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
@@ -18,17 +19,17 @@ body {
     background-size: cover;
 
 
-
-
-
 }
 
 
 #root {
+
     max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
     /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
 }
 
@@ -54,16 +55,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-
-
-
-
-
-
-
 
 
 }
@@ -84,7 +75,6 @@ a {
 }
 
 
-
 h1 {
     font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
 
@@ -94,7 +84,7 @@ h1 {
     line-height: 1.1;
 }
 
-.projectContainer{
+.projectContainer {
     display: flex;
     flex-direction: column;
 
@@ -120,6 +110,17 @@ header {
 
 }
 
+.projectsMain {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 50vh;
+    padding-top: 40vh;
+}
+
+.projectsMain article {
+}
 
 .logo:hover {
     transform: rotate(1080deg);
@@ -165,7 +166,7 @@ header {
     outline: 4px auto -webkit-focus-ring-color;
 }
 
-main {
+.homeMain {
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -178,7 +179,6 @@ main {
     max-width: 50%;
     margin-bottom: 40px;
 }
-
 
 
 .links {
