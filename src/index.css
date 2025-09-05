@@ -14,7 +14,7 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
-    background: url('assets/dither2.svg') repeat fixed center;
+    background: url('../public/assets/dither2.svg') repeat fixed center;
     background-size: cover;
 
 
