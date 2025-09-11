@@ -35,7 +35,7 @@ function Contact() {
                 <p>
                     email: yimingdoesdev@gmail.com
                 </p>
-                <a href="/assets/cv%202025.pdf">CV</a>
+                <a href="/assets/cv%202025.pdf">Click here to view CV</a>
             </main>
         </>
 
