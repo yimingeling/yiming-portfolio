@@ -38,7 +38,7 @@ function Projects() {
                         <p> AI-chatbot demo showcase built with Azure OpenAI LLM using prompt engineering and
                             embedding </p>
                         <br/>
-                        <a href="https://github.com/yimingeling/schie-zo-friends-redux">link</a>
+                        <a href="https://github.com/yimingeling/prog8_eindproject">link</a>
 
                     </article>
 
